@@ -110,9 +110,32 @@ section {
     border-bottom: var(--border-light);
 }
 
+/* General image styling */
 img {
-    object-fit: contain;
+    object-fit: cover;
     max-width: 100%;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for images */
+img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Specific class for images in the work section */
+.work__image {
+    margin-bottom: 1.5rem; /* Space below the image */
+}
+
+/* Specific class for images in the about section */
+.about__photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* --------------------------------------- */
